@@ -1,0 +1,116 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/11/2019 8:31:55 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="EC2AMAZ-GQJ0QHR"
+  DTS:CreatorName="EC2AMAZ-GQJ0QHR\rstewart"
+  DTS:DTSID="{A23D46AF-3908-48E9-BB6D-FCEFD750DE35}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="SalesforceSchemaTransfer"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{AE49B83F-25FD-49C3-B48A-EAC0D797C71E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[bf-uat-odin-01.crglrw5dkxbj.us-east-1.rds.amazonaws.com.ODIN_EODS.rstewart]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7DF691FD-8C04-4579-B867-65E93525CC61}"
+      DTS:ObjectName="bf-uat-odin-01.crglrw5dkxbj.us-east-1.rds.amazonaws.com.ODIN_EODS.rstewart">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=bf-uat-odin-01.crglrw5dkxbj.us-east-1.rds.amazonaws.com;User ID=rstewart;Initial Catalog=ODIN_EODS;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwBOuxLnrgECzQK6HR+NDbwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABuh4cSWP5DA0rmWxC50fBVUHOKwTc+1ZpeFNjawttCVQAAAAAOgAAAAAIAACAAAADh87cTUKHjvqa5DpfXbv2komZrIPbDPSNCt/Unl/+VcyAAAAAHkdpqFMWTqh2GKJtLEp/lwVkT8LXSWlD+FKPDyykPrUAAAAD1Lkt5+Q2QY3v1DpCFPP1c0eOOF0e9GpFZbCVEIbau8Ge6bhrMRM9Mo10bmF6P/W5R4Xm8xc6WZ3DVycIOrKzW</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[bf-uat-odin-01.crglrw5dkxbj.us-east-1.rds.amazonaws.com.rstewart]"
+      DTS:CreationName="SMOServer"
+      DTS:DTSID="{334400ED-4380-4B14-8E7E-F22936DA8BB1}"
+      DTS:ObjectName="bf-uat-odin-01.crglrw5dkxbj.us-east-1.rds.amazonaws.com.rstewart">
+      <DTS:ObjectData>
+        <SMOServerConnectionManager
+          ConnectionString="SqlServerName=bf-uat-odin-01.crglrw5dkxbj.us-east-1.rds.amazonaws.com;UseWindowsAuthentication=False;UserName=rstewart;">
+          <PassWord
+            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwBOuxLnrgECzQK6HR+NDbwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdVnLazzAbQeOd1tmvijRVMWYfD6RT3YtfFV5O7H3OPwAAAAAOgAAAAAIAACAAAAAnC1deDwGCk/2DDz5LkfQN9VtcChF675KmZysJExNcSSAAAADgyV476tM6xE0fpgtv4TuXHjecV2Vkih6NyekqqhqYFUAAAABBzamLoXUqhoyIZ2U5+6fhod1/ArUBWjsyByQLVHZ8jmRP1bsLzWUTZ4qGIif5Sv7TjkCp/Nnj4HR1hESP79eK</PassWord>
+        </SMOServerConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[EC2AMAZ-GQJ0QHR\SQL2017_SSIS]"
+      DTS:CreationName="SMOServer"
+      DTS:DTSID="{055E4F5F-3507-43B8-B9E0-C81AF6C8DBA5}"
+      DTS:ObjectName="EC2AMAZ-GQJ0QHR\SQL2017_SSIS">
+      <DTS:ObjectData>
+        <SMOServerConnectionManager
+          ConnectionString="SqlServerName=EC2AMAZ-GQJ0QHR\SQL2017_SSIS;UseWindowsAuthentication=True;UserName=;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[EC2AMAZ-GQJ0QHR\SQL2017_SSIS.EODS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D0C8561A-0219-428A-8529-F9BF6C5F4172}"
+      DTS:ObjectName="EC2AMAZ-GQJ0QHR\SQL2017_SSIS.EODS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=EC2AMAZ-GQJ0QHR\SQL2017_SSIS;Initial Catalog=EODS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Move DEV to UAT"
+      DTS:CreationName="Microsoft.TransferSqlServerObjectsTask"
+      DTS:Description="Transfer SQL Server Objects Task"
+      DTS:DTSID="{B36B6790-2E41-41D9-88AF-D751E7E8D55F}"
+      DTS:ExecutableType="Microsoft.TransferSqlServerObjectsTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Move DEV to UAT"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <TransferSqlServerObjectsTaskData
+          SourceConnection="{055E4F5F-3507-43B8-B9E0-C81AF6C8DBA5}"
+          DestinationConnection="{334400ED-4380-4B14-8E7E-F22936DA8BB1}"
+          SourceDatabase="EODS"
+          DestinationDatabase="ODIN_EODS"
+          CopyAllObjects="True"
+          CopyData="True"
+          CopyIndexes="True"
+          CopyFullTextIndexes="True"
+          CopyPrimaryKeys="True"
+          CopyForeignKeys="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Move DEV to UAT"
+          TopLeft="135,93" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
