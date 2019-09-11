@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SalesforceSchemaTransfer", "SalesforceSchemaTransfer\SalesforceSchemaTransfer.dtproj", "{C1C42963-CBA4-4BC5-934D-A5098D8405DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1C42963-CBA4-4BC5-934D-A5098D8405DB}.Development|Default.ActiveCfg = Development
+		{C1C42963-CBA4-4BC5-934D-A5098D8405DB}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6E6962F-154D-4E3C-BF81-40423C8C38D0}
+	EndGlobalSection
+EndGlobal
